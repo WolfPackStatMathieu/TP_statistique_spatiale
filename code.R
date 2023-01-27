@@ -142,7 +142,25 @@ ggplot() +
 # 15 - intersection
 
 
-commun
+communes_centr_depts <- st_intersects(
+  centr_depts_bretagne,
+)
+
+# 16 
+
+communes_centr_depts_sf <- st_intersects(
+  centr_depts_bretagne,
+  commune_bretagne
+)
+
+# communes_centr_depts_sf <- st_intersection(
+#   centr_depts_bretagne,
+#   commune_bretagne
+# )
+
+str(commune_bretagne)
+
+
 
 
 
